@@ -1,0 +1,148 @@
+📢 AUTO-LOGIN GENERATOR (HAR-Based) – Windows & Cross-Platform
+
+🚀 Easily generate automated login configurations for OpenBullet, SilverBullet, and Python!
+This tool extracts authentication details (tokens, cookies, CSRF) from HAR files and creates fully working login scripts.
+
+
+---
+
+🔹 WHAT DOES THIS TOOL DO?
+
+✅ Extracts login requests from a HAR file
+✅ Detects tokens, cookies, CSRF, OAuth 2.0
+✅ Generates auto-login scripts for:
+
+🔹 OpenBullet (.loli)
+
+🔹 SilverBullet (.svb)
+
+🔹 Python (.py) (fully automated login)
+✅ Works on Windows & Linux/Mac
+
+
+
+---
+
+📌 HOW TO USE?
+
+Step 1️⃣ – Capture a HAR File (Login Request)
+
+You must record a login request from your browser and save it as a HAR file.
+
+📍 Chrome / Edge
+
+1️⃣ Open Chrome or Edge.
+2️⃣ Press F12 (or Ctrl + Shift + I) to open Developer Tools.
+3️⃣ Click the Network tab.
+4️⃣ Enable "Preserve Log" (to capture login requests).
+5️⃣ Log in to the website.
+6️⃣ Look for a POST request to /login or /auth.
+7️⃣ Right-click it → Save all as HAR with content.
+
+📍 Firefox
+
+1️⃣ Press F12 to open Developer Tools.
+2️⃣ Click the Network tab.
+3️⃣ Enable Persist Logs.
+4️⃣ Log in and look for a POST request to /login.
+5️⃣ Right-click it → Save All As HAR.
+
+💾 Move the HAR file to the same folder as this script!
+
+
+---
+
+Step 2️⃣ – Install Requirements
+
+📌 Windows – Simply run:
+
+install.bat
+
+📌 Mac/Linux – Run:
+
+bash install.sh
+
+📌 Manual Install:
+
+pip install requests
+
+
+---
+
+Step 3️⃣ – Run the Script
+
+Once your HAR file is ready, run:
+
+python har_login_generator.py
+
+✅ The tool will automatically:
+✔️ Detect login requests
+✔️ Extract tokens, cookies, and session data
+✔️ Generate a working OpenBullet (.loli), SilverBullet (.svb), and Python script (.py)
+
+
+---
+
+Step 4️⃣ – Use the Generated Files
+
+📌 🟠 OpenBullet (.loli)
+1️⃣ Open OpenBullet.
+2️⃣ Load the .loli config.
+3️⃣ Run the test.
+
+📌 🟣 SilverBullet (.svb)
+1️⃣ Open SilverBullet.
+2️⃣ Load the .svb config.
+3️⃣ Start execution.
+
+📌 🐍 Python Auto-Login (.py)
+Run:
+
+python generated_login.py
+
+This automatically logs you in and saves session tokens!
+
+
+---
+
+❓ TROUBLESHOOTING & FAQ
+
+🔸 Login Not Working?
+✔️ Ensure you selected the correct login request (check HAR file).
+✔️ If the website uses CSRF tokens, they must be detected properly.
+✔️ Manually check config.json to adjust settings.
+
+
+---
+
+💾 DOWNLOAD & START NOW!
+
+💡 This tool is designed to be beginner-friendly while remaining powerful for advanced users!
+💬 If you need help, post in the forum or ask in OpenBullet/SilverBullet communities.
+
+
+---
+
+📜 install.bat (Windows Installer – One Click Setup)
+
+@echo off
+echo Installing required dependencies...
+pip install requests
+echo Setup complete! Run har_login_generator.py now.
+pause
+
+
+---
+
+📜 install.sh (Mac/Linux Installer)
+
+#!/bin/bash
+echo "Installing required dependencies..."
+pip install requests
+echo "Setup complete! You can now run har_login_generator.py"
+
+
+---
+
+🚀 READY TO AUTOMATE YOUR LOGINS? GET STARTED NOW! 🚀
+
